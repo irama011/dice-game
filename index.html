@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link rel='stylesheet' href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='app.js'></script>
+</head>
+
+<body>
+    <div class='container' id='game'>
+        <div class='row'>
+            <div class='col-md-5' id='p1'>
+                <h4>Player 1</h4>
+                <h4>Round Score:</h4>
+                <h5 id='p1score'></h5>
+                <h4>Total Score:</h4>
+                <h5 id='p1totalscore'></h5>
+                <button class='btn btn-default' onclick='play("p1")'>Play</button>
+                <button class='btn btn-default' onclick='hold("p1")'>Hold</button>
+            </div>
+            <div class='col-md-2' id='info'>
+                <img src='' id='local'>
+                <button type='button' class='btn btn-link' onclick='startNewGame()' data-toggle='collapse' data-target='notify'>New Game</button>
+                <button type='button' class='btn btn-link' data-toggle='modal' data-target='#myModal'>Rules</button>
+            </div>
+            <div class='col-md-5' id='p2'>
+                <h4>Player 2</h4>
+                <h4>Round Score:</h4>
+                <h5 id='p2score'></h5>
+                <h4>Total Score:</h4>
+                <h5 id='p2totalscore'></h5>
+                <button class='btn btn-default' onclick='play("p2")'>Play</button>
+                <button class='btn btn-default' onclick='hold("p2")'>Hold</button>
+            </div>
+        </div>
+    </div>
+    <div id='myModal' class='modal fade' role='dialog'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h4>Rules</h4><span><button type='button' class='close' data-dismiss='modal'>&times</button></span>
+                </div>
+                <div class='modal-body'>
+                    <ul class='list'>
+                        <li>The game has 2 players, playing in rounds</li>
+                        <li>In each turn, a player rolls a dice as many times as he wishes. Each result get added to his ROUND
+                            score. The current roll value is shown on the dice.</li>
+                        <li>BUT, if the player rolls a 1, all his ROUND score gets lost.The round score gets displayed in the box for each player. After that, it's the next player's turn</li>
+                        <li>The player can choose to 'Hold', which means that his ROUND score gets added to his TOTAL score.
+                            After that, it's the next player's turn</li>
+                        <li>The first player to reach 100 points on TOTAL score wins the game</li>
+                    </ul>
+                </div>
+                <div class='modal-footer'>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

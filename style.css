@@ -1,0 +1,71 @@
+ #game{
+    background-color:lightgrey;
+    width:800px;
+    height:400px;
+    border:solid 3px white;
+}
+
+#p1{
+    background-color:lightcyan;
+    width:200px;
+    height:300px;
+    border-radius:15px;
+    margin:50px;
+   }
+
+
+#p2{
+    background-color:lightblue;
+    width:200px;
+    height:300px;
+     border-radius:15px;
+    margin:50px
+}
+
+#p1score,#p2score{
+    font-size:40px;
+    color:red;
+    border:solid grey 1px;
+    width:60px;
+    height:50px;
+   text-align: center;
+    font-family: Helvetica;
+    align-content: center;
+}
+
+#p1totalscore,#p2totalscore{
+    font-size:40px;
+    color:red;
+    border:solid grey 1px;
+    width:80px;
+    height:50px;
+    text-align: center;
+    font-family: Helvetica;
+    align-content: center;
+}
+
+#info{
+    background-color:white;
+    width:150px;
+    height:300px;
+    margin-top:50px
+}
+
+#info #local{
+    background-color:white;
+    width:100px;
+    height:100px;
+    margin:50px;
+    padding-left: 15px;
+    border:solid 3px grey;
+    margin-top:20px;
+    margin-left:5px; 
+}
+
+#info #local img{
+    width:80px;
+    height:80px;
+    padding-left:55px;
+    align-content:center;
+    
+}
